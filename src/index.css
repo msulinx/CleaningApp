@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40%;
+}
+
+#header {
+  position: absolute;
+  top: 10%;
+  left: 23%;
+
+  .title {
+    color: black;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 1rem;
+    width: 250px;
+    text-align: center;
+    background-color: rgb(255, 192, 192);
+  }
+}
+
+.addchore-container {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .add-task {
+    margin-block: 1rem;
+    height: 35px;
+    padding: .5rem;
+  }
+
+  .add-task::placeholder {
+    text-align: center;
+  }
+
+  .select-room {
+    width: 150px;
+    height: 30px;
+    display: block;
+  }
+
+  .add-task-button {
+    margin-block: 1rem;
+    width: 150px;
+    height: 30px;
+  }
+
+}
+
+.app-main {
+  margin-left: 10%;
+  width: 80%;
+  position: absolute;
+  top: 55%;
+}
+
+.column-heading {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  .heading-icon {
+    width: 15px;
+    height: 15px;
+  }
+
+}
+
+.room {
+  margin-top: 1rem;
+  padding: .5rem;
+}
+
+
+/*/ Rooms */
+
+#entrance {
+  background-color: rgb(220, 182, 253);
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(178, 178, 178);
+}
+
+#kitchen {
+  background-color: rgb(248, 253, 182);
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(178, 178, 178);
+}
+
+#bathroom {
+  background-color: rgb(182, 228, 253);
+  border: 1px solid rgb(178, 178, 178);
+  display: flex;
+  flex-direction: row;
+}
+
+#livingroom {
+  background-color: rgb(185, 254, 180);
+  display: flex;
+  border: 1px solid rgb(178, 178, 178);
+}
+
+#bedroom {
+  background-color: rgb(253, 217, 182);
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(178, 178, 178);
+}
+
+.todo-list {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+
+  .tasks-text {
+    font-size: .8rem;
+  }
+}
+
+.delete-task-button {
+  width: 15px;
+  height: 15px;
+}
+
+.task-count {
+  background-color: rgb(214, 211, 255);
+  margin-left: 33%;
+  color: black;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 1rem;
+  width: 150px;
+  text-align: center;
+
+  .count-text {
+    font-weight: 600;
+  }
+
+}
